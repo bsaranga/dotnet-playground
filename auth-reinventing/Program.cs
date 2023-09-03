@@ -1,7 +1,6 @@
 using auth_reinventing;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.Intrinsics.Arm;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
