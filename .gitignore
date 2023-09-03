@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.vs/dotnet-playground/v17/.suo
+/.vs/dotnet-playground/FileContentIndex/79ab8dec-5967-4c48-b846-3a5b405bcc24.vsidx
+/.vs/dotnet-playground/DesignTimeBuild/.dtbcache.v2
