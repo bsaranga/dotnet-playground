@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using System.Text;
 
 const string AUTH_SCHEME = "my-cookie-auth";
 const string POLICY = "saarc-passport";
@@ -45,7 +46,17 @@ app.UseAuthorization();
 
 app.MapGet("/username", (HttpContext context) =>
 {
-    return context.User.FindFirst("usr")?.Value;
+    var isAuthenticated = context.User.Identity?.IsAuthenticated;
+
+    if (!isAuthenticated!.Value)
+    {
+        return "Not authenticated";
+    }
+    else
+    {
+        return context.User.FindFirst("usr")?.Value;
+    }
+
 });
 
 app.MapGet("/login", async (HttpContext context, [FromQuery] string username, [FromQuery] bool? hasPassport) =>
@@ -54,7 +65,7 @@ app.MapGet("/login", async (HttpContext context, [FromQuery] string username, [F
     if (hasPassport.HasValue && hasPassport.Value) claims.Add(new Claim(SAARC_CLAIM, "saarc passport"));
 
     var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(claims, AUTH_SCHEME));
-    
+
     await context.SignInAsync(AUTH_SCHEME, claimsPrincipal);
     return "ok";
 });
