@@ -70,9 +70,10 @@ app.MapGet("/forbidden", (context) =>
     return Task.CompletedTask;
 });
 
-app.Map("/unauthenticated", () =>
+app.Map("/unauthenticated", (context) =>
 {
-    return "You are not authenticated, please login.";
+    context.Response.StatusCode = 401;
+    return Task.CompletedTask;
 });
 
 app.MapGet("/logout", async (HttpContext context) =>
