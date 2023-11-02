@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Move Schema" Key="e71bea5b-342c-4aef-9fb9-64eb9dc267ca" ChangeDateTime="11/02/2023 12:29:34">
+    <Property Name="ElementName" Value="[dbo].[User]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="mySchema" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+</Operations>
