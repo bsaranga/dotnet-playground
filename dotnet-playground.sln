@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFormApp", "TestFormApp\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sample-db-project", "sample-db-project\sample-db-project.sqlproj", "{D78E76F5-0203-4EEA-ABB6-3FD15167AFFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewTests", "InterviewTests\InterviewTests.csproj", "{91DCF4C0-6371-4683-84A3-10C10438ABBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewTests", "InterviewTests\InterviewTests.csproj", "{91DCF4C0-6371-4683-84A3-10C10438ABBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMQServer", "ZMQServer\ZMQServer.csproj", "{D781EAEE-FC20-44CA-A19E-D518EFD56962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMQClient", "ZMQClient\ZMQClient.csproj", "{14ADFF32-869D-4F73-B505-3DBB3E21B880}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,8 +51,19 @@ Global
 		{91DCF4C0-6371-4683-84A3-10C10438ABBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91DCF4C0-6371-4683-84A3-10C10438ABBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91DCF4C0-6371-4683-84A3-10C10438ABBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D781EAEE-FC20-44CA-A19E-D518EFD56962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D781EAEE-FC20-44CA-A19E-D518EFD56962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D781EAEE-FC20-44CA-A19E-D518EFD56962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D781EAEE-FC20-44CA-A19E-D518EFD56962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14ADFF32-869D-4F73-B505-3DBB3E21B880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14ADFF32-869D-4F73-B505-3DBB3E21B880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14ADFF32-869D-4F73-B505-3DBB3E21B880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14ADFF32-869D-4F73-B505-3DBB3E21B880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F30E58C4-9832-4BD8-8343-BB0973C47073}
 	EndGlobalSection
 EndGlobal
