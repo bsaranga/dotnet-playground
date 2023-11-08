@@ -1,1 +1,1 @@
-﻿INSERT INTO [mySchema].[User] VALUES (1, 'John', 'Doe');
+﻿INSERT INTO [mySchema].[User] VALUES ('John', 'Doe');

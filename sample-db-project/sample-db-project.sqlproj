@@ -59,10 +59,11 @@
     <Folder Include="mySchema" />
     <Folder Include="mySchema\Tables" />
     <Folder Include="mySchema\Data" />
+    <Folder Include="mySchema\Schemas" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="mySchema\Tables\User.sql" />
-    <Build Include="mySchema.sql" />
+    <Build Include="mySchema\Schemas\mySchema.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="sample-db-project.publish.xml" />
