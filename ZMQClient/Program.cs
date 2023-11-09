@@ -16,6 +16,17 @@ namespace ZMQClient
                     string message = Console.ReadLine() ?? "<empty_message>";
                     if (message == "exit" || message == "x")
                         break;
+                    else if (message.StartsWith("loop_"))
+                    {
+                        message = message.Split('_')[1];
+                        while (true)
+                        {
+                            Console.Write(message);
+                            client.SendFrame(message);
+                            var response = client.ReceiveFrameString();
+                            Console.Write($" ");
+                        }
+                    }
                     else
                     {
                         client.SendFrame(message);
