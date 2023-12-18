@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMQClient", "ZMQClient\ZMQC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grpc_chat_service", "gRPC-tests\grpc_chat_service\grpc_chat_service.csproj", "{D0046974-3883-44AE-89D6-DA2140BF7D45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewPracticeCodeTests", "InterviewPracticeCodeTests\InterviewPracticeCodeTests.csproj", "{644AB76F-6904-4240-8DD4-B4DA00C83EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewPracticeCodeTests", "InterviewPracticeCodeTests\InterviewPracticeCodeTests.csproj", "{644AB76F-6904-4240-8DD4-B4DA00C83EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingPatterns", "PrintingPatterns\PrintingPatterns.csproj", "{6C46094C-31E6-4CC7-9D74-4D528D31DE73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{644AB76F-6904-4240-8DD4-B4DA00C83EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{644AB76F-6904-4240-8DD4-B4DA00C83EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{644AB76F-6904-4240-8DD4-B4DA00C83EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C46094C-31E6-4CC7-9D74-4D528D31DE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C46094C-31E6-4CC7-9D74-4D528D31DE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C46094C-31E6-4CC7-9D74-4D528D31DE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C46094C-31E6-4CC7-9D74-4D528D31DE73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
