@@ -1,38 +1,47 @@
 ﻿namespace PrintingPatterns
 {
     /*
-    ____*____
-    ___***___
-    __*****__
-    _*******_
+    ____*
+    ___***
+    __*****
+    _*******
     *********
+        |
 
-    nth_odd = 2(n) - 1, where n > 0
+    nth_odd = 2(n) + 1, where n >= 0
     nRows = treeHeight
-    nCols = 2(nRows) - 1
-
-            1
-           2 2
-          3 3 3
-         4 4 4 4
-        5 5 5 5 5 
+    nCols = 2(nRows) - 1 
      */
     internal class ChristmasTree : IPatternPrinter
     {
         public void Print()
         {
-            int treeHeight = 5;
-            int nCols = (2 * treeHeight - 1);
-            for (int i = 1; i <= treeHeight; i++)
+            int height = 5;
+            
+            for (int i = 0; i < height; i++)
             {
-                for (int j = 1; j <= nCols; j++)
+                // Print spaces
+                for (int k = 0; k < height - 1 - i; k++)
                 {
-                    int numStars = 2 * i - 1;
-                    int numSpace = nCols - numStars;
-                    Console.Write("_");
+                    Console.Write(" ");
+                }
+
+                // Print stars
+                for (int j = 0; j < (2 * i + 1); j++)
+                {
+                    Console.Write("*");
                 }
 
                 Console.WriteLine();
+            }
+
+            // Print trunk
+            for (int i = 0;i < height; i++)
+            {
+                if (i == height - 1)
+                {
+                    Console.Write("|");
+                } else Console.Write(" ");
             }
         }
     }
